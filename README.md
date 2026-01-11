@@ -365,7 +365,7 @@ var sayHi = function () {
 - Use **function declarations** when hoisting behavior is required
 > Note: Understanding hoisting helps you **write predictable code** and **avoid runtime errors**, especially when working with larger codebases.
 # Scopes
-==Scope determines where variables can be accessed or used in a JavaScript program==. It defines the **visibility and lifetime** of variables and functions.
+_Scope determines where variables can be accessed or used in a JavaScript program_. It defines the **visibility and lifetime** of variables and functions.
 
 In JavaScript, scope controls **where a variable is available** and **where it is not**.
 .
@@ -422,7 +422,7 @@ if (true) {
 console.log(age); // ReferenceError
 ```
 ## Lexical Scope
-==Lexical scope means that inner functions can access variables from their outer scope==. Scope is determined by **where the code is written**, not where it is executed.
+__Lexical scope means that inner functions can access variables from their outer scope__. Scope is determined by **where the code is written**, not where it is executed.
 ```js
 const outer = () => {
   let count = 10;
