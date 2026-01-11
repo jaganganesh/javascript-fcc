@@ -317,7 +317,7 @@ console.log(country); // India
 
 > Note: `const` does **not** make objects or arrays immutable — only the **reference** is constant.
 # Hoisting
-Hoisting is a JavaScript behavior where variable and function declarations are processed before code execution.
+Hoisting is a JavaScript behavior where variable and function declarations are processed before code execution begins.
 ## Variable Hoisting
 The behavior of hoisting depends on **how the variable is declared**.
 ### `var` Hoisting
@@ -368,7 +368,6 @@ var sayHi = function () {
 _Scope determines where variables can be accessed or used in a JavaScript program_. It defines the **visibility and lifetime** of variables and functions.
 
 In JavaScript, scope controls **where a variable is available** and **where it is not**.
-.
 ## Global Scope
 Variables declared **outside of any function or block** are in the global scope. They can be accessed **from anywhere** in the program.
 ```js
@@ -397,7 +396,7 @@ myFuncTwo();
 ```
 
 > Note: In **strict mode**, assigning a variable without `var`, `let`, or `const` throws an error.
-### Strict mode
+### Strict Mode
 > **Strict mode** helps you catch common coding mistakes and unsafe actions **early** by turning them into errors. You can enable strict mode by adding `"use strict"` at the **top of a JavaScript file** or at the **beginning of a function**.
 ## Function Scope
 Variables declared inside a function are **function-scoped** and can only be accessed **within that function**.
@@ -422,7 +421,7 @@ if (true) {
 console.log(age); // ReferenceError
 ```
 ## Lexical Scope
-__Lexical scope means that inner functions can access variables from their outer scope__. Scope is determined by **where the code is written**, not where it is executed.
+_Lexical scope means that inner functions can access variables from their outer scope_. Scope is determined by **where the code is written**, not where it is executed.
 ```js
 const outer = () => {
   let count = 10;
